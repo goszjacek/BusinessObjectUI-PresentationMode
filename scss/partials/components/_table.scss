@@ -1,0 +1,79 @@
+// @author Jacek Gosztyla
+////
+/// @group table
+/// Not only `<table>` classes but also `display: table` components. 
+////
+
+
+/// Very important class!!!
+/// If you don't need to use it in a list, propably `.d-inline-block` will be enough. 
+/// Used not only as button, but also in notes headers and other components, which need component with icon fixed next to text. 
+/// Improvement of `.btn-icon-text`
+/// A structure consisted of a small icon on the left, and a text on the right. Used i.e. in address data.
+/// It is the best way to display lists (like .icon-text-list) consisted of icon next to text items. 
+/// @example html
+/// <div class="icon-text-table">
+///     <div class="itt-icon">
+///             <img src="./icons/other-icons/google-maps.svg">    
+///     </div>
+///     <div class="itt-text">
+///         ul. Wrocławska 142/20 <br/>
+///         31-125 Kraków                                   
+///     </div>
+/// </div>
+///
+/// <a href="">
+///     <div class="icon-text-table">
+///         <div class="itt-icon">
+///             <img src="">   
+///         </div>
+///         <div class="itt-text"></div>
+///     </div>
+/// </a>
+.icon-text-table{
+    @extend .link;
+    cursor: pointer; // clickable ;
+    display:table;    
+    div{
+        display: table-cell;
+        word-break: break-all;   
+        vertical-align: middle;  
+    }
+    .itt-icon{
+        @extend .inline-icons-size;
+        padding-right: $padding-3;  
+    }
+    .itt-text{
+        line-height: 1;
+        padding: 0;
+    }
+}
+
+/// Add some styling to table. Use after bootstrap classes.
+.table-go{
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: $back-light-color;
+    th{
+        font-weight: bold;
+        font-style:italic;
+    }
+}
+
+
+/// Display table inline with other elements, and break words in headers
+/// Be careful: border doesn't work for table displayed inline. 
+.vertical-inline-table{
+    display: inline;
+    //border: 1px solid $back-light-color;
+    
+    th{
+        word-break: break-all;
+        padding: $vertical-inline-table-padding;
+    }
+    td{
+        text-align: center;
+    }
+}
+

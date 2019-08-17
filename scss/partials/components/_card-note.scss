@@ -1,0 +1,85 @@
+// @author Jacek Gosztyla
+////
+/// @group card-note
+/// Card to display notes. 
+////
+
+/// card-note container, see how-to-use template:
+/// @example html - how-to-use template
+/// <div class="card-note" >
+///     <div class="card-note-header d-flex">                        
+///         <div class="flex-fill">                        
+///             <div class="container-fluid">
+///                 <div class="row">
+///                     <div class="col-8 p-2">                                    
+///                         <div class="icon-text-table">
+///                             <div class="itt-icon">
+///                                 <img src="./icons/material-icons/baseline-comment-24px.svg">     
+///                             </div>
+///                             <div class="itt-text">
+///                                 <h2>
+///                                     <a href="">It is the title of the note. It is a link too. </a>
+///                                 </h2>                                    
+///                             </div>
+///                         </div>
+///                     </div>
+///                     <div class="col-4 text-right">
+///                         <p>
+///                             2018-07-26 (date)
+///                         </p>
+///                         <p class="link">
+///                             Jacek Jackowski  (author)
+///                         </p>
+///                     </div>
+///                 </div>
+///             </div>
+///         </div>
+///         <div class="card-note-header-icons text-right">
+///             <img src="icons/material-icons/baseline-delete-24px.svg" />
+///             <img src="icons/material-icons/baseline-create-24px.svg" />
+///         </div>                        
+///     </div>                    
+///     <div class="card-note-content-container">
+///         <div class="card-note-content-inner">
+///             ... content of the note
+///         </div>
+///     </div> 
+/// </div>
+.card-note{
+    overflow: hidden;
+}
+
+/// Use with `.d-flex`
+.card-note-header{
+    overflow:hidden; //? do sprawdzenia 
+    background-color: $back-light-color;
+    border: solid $back-middle-color;
+    border-width: 1px 0 1px 0;
+}
+
+/// Icons of the header of a note. 
+.card-note-header-icons{    
+    margin-right: $margin-2;
+    width: 3*$card-go-actions-icon-size; //space for at least two icons. 
+    img{
+        cursor: pointer; /// clickable ;
+        width: $card-go-actions-icon-size;
+        transform:translateY(-10%);
+    }
+}
+
+/// Content container of the note. The content put directly in `.card-note-content-inner`
+.card-note-content-container{
+    padding: 0 $padding-4 0 $padding-4;
+}
+
+/// Here goes note content.
+.card-note-content-inner{
+    margin-top: $margin-4;
+    margin-bottom: $seperate-margin;
+    padding-left: $padding-3;
+    border-style: solid;
+    border-width: 0 0 0 3px;
+    border-color: $back-middle-color;
+}
+

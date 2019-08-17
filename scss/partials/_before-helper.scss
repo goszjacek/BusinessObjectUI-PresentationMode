@@ -1,0 +1,12 @@
+// @author Jacek Gosztyla
+////
+/// @group before-helper
+/// Different mixins and classes used by components
+////
+
+
+/// Mixin with attribues of list without style and indent.
+@mixin clean-list{
+    list-style-type: none;
+    padding: 0;
+}

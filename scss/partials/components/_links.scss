@@ -1,0 +1,48 @@
+// @author Jacek Gosztyla
+//// 
+/// @group links
+////
+
+
+/// Use for head-row titles
+.simple-link{
+    color: $front-color;
+    text-decoration: none;
+    &:hover{
+        color: $front-color;
+        text-decoration: underline;
+    }
+}
+
+
+/// Pretty the same behaviour as wraping with `<a>` tag.
+.link{
+    color: $link-color;
+    border: none;
+    &:hover{
+        cursor: pointer; // clickable ;
+        color: $link-color;
+        text-decoration: underline;
+        border: none;
+    }
+}
+
+/// @deprecated
+/// Use for links consisted of icon on the left and a text on the right. 
+/// simple icon-text component. Similar to icon-text-table but without list support. 
+.icon-text-link{
+    background-color: $back-color;
+    color: $link-color;
+    border: none;
+    display: inline-block;
+    &:hover{
+        background-color: $back-color;
+        color: $link-color;
+        text-decoration: underline;
+        border: none;
+    }
+    img{
+        width: $inline-icon;
+    }
+}
+

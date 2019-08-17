@@ -1,0 +1,44 @@
+// padding vars
+$padding-1: 1px;
+$padding-2: 3px;
+$padding-3: 5px;
+$padding-4: 10px;
+$padding-5: 20px;
+
+// margin vars
+$margin-2: 3px;
+$margin-3: 5px;
+$margin-4: 10px;
+$margin-5: 14px;
+$margin-6: 20px;
+$seperate-margin: 80px;
+
+
+
+//icons
+$main-icon-size: 30px;
+$main-icon-indent: $margin-3;
+
+$row-go-actions-icon-size: 23px;
+$card-go-actions-icon-size: 15px;
+
+$inline-icon: 20px;
+
+//rows
+$rows-line-height: 1.25;
+$rows-spacing: 30px;
+$content-padding: $main-icon-size + $main-icon-indent;
+
+//hashtag
+$hashtag-padding: $padding-1 $padding-2 $padding-1 $padding-3;
+$hashtag-radius: 3px;
+
+//cards
+$card-go-data-unit-space: 5px;
+
+//buttons
+$lg-radius: 5px;
+$md-radius: 3px;
+
+//table
+$vertical-inline-table-padding: 0 $padding-3 $padding-2 $padding-3;

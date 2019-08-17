@@ -1,0 +1,77 @@
+// @author Jacek Gosztyla
+////
+/// @group row
+/// @example html
+/// <div class="row">           
+///     <div class="head-row-content col-9">
+///        <img src=""/>
+///        <h1> ... </h1>
+///        <h3> ... </
+///        <div>
+///            components...
+///        </div>
+///    </div>
+///    <div class="head-row-actions col-3">     
+///        <img src="...">
+///    </div>            
+/// </div>
+////
+
+/// Head row container. This is a bootstrap class. See example. 
+.row{
+    // nothing
+}
+
+/// Head row content, without actions
+/// `.icon-text-table` will be useful to use inside `.head-row-content`, if you want an icon always on the left side of the text. 
+.head-row-content{
+    display: table;
+        
+    div{
+        vertical-align: top;
+        display: table-cell;
+    }
+
+    h1{              
+        line-height: $rows-line-height;        
+        display:inline;
+    }
+    h2{
+        padding-bottom: $padding-2;
+        display:inline;
+    }
+
+    img{
+        width: $main-icon-size;
+        vertical-align: top;
+
+    }
+}
+
+/// Head row actions, displayed in the top right corner.  
+.head-row-actions{    
+    text-align: right;
+    img{
+        cursor: pointer; // clickable ;     
+        width: $row-go-actions-icon-size;
+    }
+}
+
+/// Middle row used after head-row, use together with `row`
+/// @example html - usage
+/// <div class="row middle-row">
+///     <div class="col-sm-6 ">
+///         <div class="card-go">                
+///             ...
+///         </div>
+///     </div>
+///     <div class="col-sm-6 ">
+///     </div>        
+/// </div>
+///
+.middle-row{
+    padding-top: $padding-4;
+    padding-bottom: $padding-4;
+    margin-bottom: $margin-4;
+}
+

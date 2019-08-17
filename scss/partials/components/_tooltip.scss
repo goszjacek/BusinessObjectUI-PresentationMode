@@ -1,0 +1,42 @@
+// @author Jacek Gosztyla
+////
+/// @group tooltip
+/// Tooltip used i.e. for head-row icons.
+/// Usage: in a `span.tooltip-go` put `<img>` and `span.tooltiptext` after it, with text to display on tooltip
+/// @example html - template
+/// <span class="tooltip-go">
+///     <img src="./icons/material-icons/outline-info-24px.svg">    <span class="tooltiptext">Informacje</span>
+/// </span>
+////
+
+
+/// Base container for tooltip, use with `<span>` element.
+.tooltip-go {
+    position: relative;
+    display: inline-block;
+}
+
+
+/// Prepare tooltip. Hidden for default.
+.tooltip-go .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: $front-color;
+    color: $back-color;
+    text-align: center;
+    border-radius: $md-radius;
+    padding: $padding-2;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/// Show tooltip on hover.
+.tooltip-go:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

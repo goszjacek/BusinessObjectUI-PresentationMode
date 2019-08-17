@@ -1,0 +1,75 @@
+// @author Jacek Gosztyla
+////
+/// @group after-helper
+/// Different mixins and classes used after components. 
+////
+
+
+
+/// Seperate most of the elements inside i.e. `div` with medium margin.
+.seperate-2{
+    > img, > button, > table, > div, > a, > span{
+        margin-bottom: $margin-3;
+        margin-right: $margin-3;
+    }         
+}
+
+/// Seperate most of the elements inside i.e. `div` with large margin.
+.seperate-3{
+    > img, > button, > div, > a, > span{
+        margin-bottom: $margin-4;
+        margin-right: $margin-4;
+    }      
+    > table{
+        margin-bottom: $margin-5;
+        margin-right: $margin-5;
+    }   
+}
+
+/// Seperate vertically most of the elements inside i.e. `div` with medium margin.
+/// Use in lists of divs or other html elements.
+.seperate-y-2{ 
+    > img, > button, > table, > div, > a, > span{
+        margin-bottom: $margin-3;
+    }         
+}
+
+/// Seperate vertically most of the elements inside i.e. `div` with large margin.
+/// Use in lists of divs or other html elements.
+.seperate-y-3{
+    > img, > button, > div, > a, > span{
+        margin-bottom: $margin-4;
+    }      
+    > table{
+        margin-bottom: $margin-5;
+    }   
+}
+
+
+/// Seperate two rows with a line.
+.separator{
+    margin-top: $rows-spacing;
+    margin-bottom: $margin-3;
+    border-top: $separation-borders-style;
+}
+
+/// Use i.e. if you don't want to have paddingin card content. 
+.clean-padding{
+    padding: 0;
+}
+
+/// Seperate paragraphs.
+.md-space-p{
+    p{
+        margin-bottom: $margin-3;
+    }
+}
+
+
+/// @deprecated
+/// Was used for a card "Analiza firmy"
+.float-elements{
+    >div, >img, >table, >button{
+        float: left;
+    }
+}

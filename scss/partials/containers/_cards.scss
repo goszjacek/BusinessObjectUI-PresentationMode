@@ -1,0 +1,57 @@
+// @author Jacek Gosztyla
+//// cards
+/// @group cards
+/// @example html - template
+/// <div class="card-go">
+///     <div class="header">
+///         <div class="card-go-header-title"> </div>
+///         <div class="card-go-header-actions"> 
+///             <img src="..."/> 
+///         </div>
+///     </div>
+///     <div class="card-go-content row">                        
+///         <div class="col-sm-6"> </div>
+///         <div class="col-sm-6"> </div>
+///     </div>                    
+/// </div>
+////
+
+/// Base container for cards. Check how does it behave on different windows widths, maybe some `mt-3` or `mb-3` bootstrap margin class is needed.
+.card-go{
+    border: $card-go-borders-base;
+    border-radius: $card-go-border-radius;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+}
+
+///
+.card-go-header{
+    background-color: $card-go-header-background-color;
+    overflow:auto;
+    padding: $padding-2;
+    border-bottom: $card-go-borders-base;
+    &-title{
+        float: left;
+    }
+    &-actions{        
+        float: right;
+        img{
+            cursor: pointer; // clickable ;
+            width : $card-go-actions-icon-size;
+        }
+        font-size: $sm-font;
+    }
+}
+
+/// Works the best together with Bootstrap 4 `row` used in the same div, as in the example. 
+/// If you need insinde a card only one plain column of some data, use `<div class="col-12"> </div>` inside. 
+/// If you need responsive design with multiple columns, use many divs with B4 `col-*` classes inside. 
+.card-go-content{
+    clear:left;
+    overflow: auto;
+    padding: $padding-4;
+}

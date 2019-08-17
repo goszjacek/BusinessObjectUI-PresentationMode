@@ -1,0 +1,15 @@
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns2="http://www.inkscape.org/namespaces/inkscape" xmlns:ns4="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" height="24" id="svg6" version="1.1" viewBox="0 0 24 24" width="24" ns1:docname="baseline-arrow_down-24px.svg" ns2:version="0.92.4 (5da689c313, 2019-01-14)">
+  <ns0:metadata fill="#333" id="metadata12">
+    <rdf:RDF>
+      <ns4:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </ns4:Work>
+    </rdf:RDF>
+  </ns0:metadata>
+  <ns0:defs fill="#333" id="defs10" />
+  <ns1:namedview bordercolor="#666666" borderopacity="1" fill="#333" gridtolerance="10" guidetolerance="10" id="namedview8" objecttolerance="10" pagecolor="#ffffff" showgrid="false" ns2:current-layer="svg6" ns2:cx="12" ns2:cy="12" ns2:pageopacity="0" ns2:pageshadow="2" ns2:window-height="480" ns2:window-maximized="0" ns2:window-width="640" ns2:window-x="63" ns2:window-y="129" ns2:zoom="9.8333333" />
+  <ns0:path d="m 19.82,5.94 -7.88,7.88 -7.88,-7.88 -2.12,2.12 10,10 10,-10 z" fill="#333" id="path2" ns2:connector-curvature="0" />
+  <ns0:path d="M0 0h24v24H0z" fill="none" id="path4" />
+</ns0:svg>

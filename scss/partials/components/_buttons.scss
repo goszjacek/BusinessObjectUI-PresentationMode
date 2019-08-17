@@ -1,0 +1,40 @@
+// @author Jacek Gosztyla
+////
+/// @group buttons
+/// different button classes
+////
+
+
+
+/// @deprecated
+/// another way do design .icon-text-table
+.btn-icon-text{
+    cursor: pointer; // clickable ;
+    display:block;
+    div{
+        float: left;
+    }
+    .itt-icon{
+        @extend .inline-icons-size;
+        margin-right: $margin-3;  
+    }
+    .itt-text{
+        @extend .link;        
+        margin-top: $margin-3;
+        line-height: 1;
+    }
+}
+
+/// @deprecated
+/// button with style of cards
+button-cardish{
+    background-color: $back-light-color;
+    color: $front-color;
+    border-radius: $lg-radius;
+    border: 1px solid $back-middle-color;
+    &:hover{
+        background-color: $middle-color;
+    }
+}
+
+

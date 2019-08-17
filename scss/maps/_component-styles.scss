@@ -1,0 +1,24 @@
+// @author Jacek Gosztyla
+////
+/// @group component-styles
+/// styles for components and containers
+/// file created with purpose to affect global styling with changes in a single file. 
+/// I recommend to extend it, when new components/ containers added. 
+////
+
+
+//separators
+$separation-borders-color: $middle-color;
+
+$separation-borders-style: 1px solid $separation-borders-color;
+
+///cards
+$card-go-borders-color: $back-middle-color;
+$card-go-header-background-color: $back-light-color;
+$card-go-header-color: $front-color;
+$card-go-borders-width: 1px;
+
+$card-go-borders-base: $card-go-borders-width solid $card-go-borders-color;
+$card-go-border-radius: $md-radius;
+
+

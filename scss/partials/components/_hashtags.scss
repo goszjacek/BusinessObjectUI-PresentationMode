@@ -1,0 +1,65 @@
+// @author Jacek Gosztyla
+////
+/// @group hashtag
+/// There are two ways to use hashtag.
+///  1. Simple .hashtag class creates inline elements, can be used anywhere, doesn't affect layout. 
+///  2. Hashtag list. Every `li` element of the list becomes a hashtag element. Best way to use in the bottom of containers. In the middle some unexpected margin occurs. 
+//// 
+
+/// @deprecated
+.hashtag-list{
+    @include clean-list;
+    display:inline;
+    font-size: $sm-font;
+    li{
+        padding: $hashtag-padding;
+        border-radius: $hashtag-radius;
+        display: inline-block;
+
+        color: #fff;
+    }
+} 
+
+/// use with `<span>` element. 
+.hashtag{
+    padding: $hashtag-padding;
+    border-radius: $hashtag-radius;
+    display: inline-block;
+    
+    font-size: $sm-font;
+    color: #fff;
+}
+
+/// 
+.hashtag-list li, .hashtag{
+    &.red{
+        background-color:red;
+    }
+    &.blue{
+        background-color:blue;
+    }
+    &.green{
+        background-color:green;
+    }
+    &.brown{
+        background-color:brown;
+    }
+    &.yellow{
+        background-color:yellow;
+    }
+    &.orange{
+        background-color:orange;
+    }
+    &.magenta{
+        background-color:magenta;
+    }
+    &.black{
+        background-color:black;
+    }
+    &.purple{
+        background-color:purple;
+    }
+    &.gold{
+        background-color:gold;
+    }
+}

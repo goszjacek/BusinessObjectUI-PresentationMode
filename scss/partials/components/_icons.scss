@@ -1,0 +1,32 @@
+// @author Jacek Gosztyla
+////
+/// @group icons
+/// 
+////
+
+
+/// Size of icons used inline with other or next to elements. 
+.inline-icons-size{
+    img{
+        height: $inline-icon;        
+    }
+}
+
+/// Medium icons.
+.md-icons-size{
+    img{
+        width: 20px;
+    }
+}
+
+
+/// @deprecated
+/// We used it, when we had big square icons in the "Analiza firmy" card.
+.square-icons{
+    img{
+        cursor: pointer; // clickable ;
+        width: 40px;
+        height: 40px;
+        margin-right: $margin-3;
+    }
+}

@@ -1,0 +1,89 @@
+// @author Jacek Gosztyla
+// @author Jacek Gosztyla
+////
+/// lists
+/// @group lists
+/// - different lists to display data, if one doesn't work, try different
+/// - list helpers as well
+////
+
+
+///  list with no symbol and indent
+.clean-list{
+    @include clean-list;
+    margin:0;
+}
+
+
+/// inline list of `<li>` elements next to each other
+.inline-list{
+    @include clean-list;
+    display: inline;
+    li{
+        display: inline-block;
+    }
+}
+
+
+/// make medium space between `<li>` items
+.space-list-1{
+    li{
+        margin-bottom: $margin-3;
+    }
+}
+
+
+/// make large space between `<li>` items
+.space-list-2{
+    li{
+        margin-bottom: $margin-4;
+    }
+}
+
+
+/// make extra large space between `<li>` items
+.space-list-3{
+    li{
+        margin-bottom: $margin-5;
+    }
+}
+
+
+/// simple list with indent
+.simple-indent-list{
+    padding-left: $padding-5;
+    list-style-type:  disc;
+}
+
+/// use to display chechboxes inline with other elements
+/// @example html - usage
+/// <ul class="checkbox-inline-list">
+/// <li>
+///         <input id="vip-checkbox" type="checkbox" > <label for="vip-checkbox">VIP</label>
+/// </li>
+/// <li>
+///         <input id="bip-checkbox" type="checkbox" > <label for="bip-checkbox">BIP</label>
+/// </li>
+/// <li>
+///         <input id="ba-checkbox" type="checkbox" > <label for="ba-checkbox">BA</label>
+/// </li>
+/// </ul> 
+.checkbox-inline-list{
+    @extend .inline-list;
+    li{
+        margin-right: 1em;
+    }
+    label, input{
+        cursor: pointer; // clickable ;
+    }
+    
+}
+
+/// use for lists with icon-text-table components.. 
+.icon-text-list{
+    @include clean-list;
+    @extend .inline-icons-size;  
+    margin: 0;
+    padding: 0;  
+}
+
